@@ -1,0 +1,119 @@
+{1} Problem statement
+Sam is making a forest visualizer. An N-dimensional forest is represented by the pattern of size NxN filled with ‘*’.
+For every value of ‘N’, help sam to print the corresponding N-dimensional forest.
+Example:--Input: ‘N’ = 3
+Output: 
+* * *
+* * *
+* * *
+//import java.util.*;
+public class Solution {
+    public static void nForest(int n) {
+        // Write your code here
+        //Scanner sc=new Scanner(System.in);
+        //int n=sc.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n;j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+
+
+{2} Sam is making a forest visualizer. An N-dimensional forest is represented by the pattern of size NxN filled with ‘*’.
+An N/2-dimensional forest is represented by the lower triangle of the pattern filled with ‘*’.
+For every value of ‘N’, help sam to print the corresponding N/2-dimensional forest.
+Example:--Input:  ‘N’ = 3
+Output: 
+* 
+* *
+* * *
+public class Solution {
+    public static void nForest(int n) {
+        // Write your code here
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<=i;j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+{3} Sam is making a Triangular painting for a maths project.
+An N-dimensional Triangle is represented by the lower triangle of the pattern filled with integers starting from 1.
+For every value of ‘N’, help sam to print the corresponding N-dimensional Triangle.
+Example:--Input: ‘N’ = 3
+Output: 
+1
+1 2 
+1 2 3
+public class Solution {
+    public static void nTriangle(int n) {
+        // Write your code here
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(j +" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+{4} Problem statement
+Sam is making a Triangular painting for a maths project.
+An N-dimensional Triangle is represented by the lower triangle of the pattern filled with integers representing the row number.
+For every value of ‘N’, help sam to print the corresponding Triangle.
+Example:---Input: ‘N’ = 3
+Output: 
+1
+2 2 
+3 3 3
+public class Solution {
+    public static void nTriangle(int n) {
+        // Write your code here
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+{5} Problem statement
+Sam is planting trees on the upper half region (separated by the left diagonal) of the square shared field.
+For every value of ‘N’, print the field if the trees are represented by ‘*’.
+Example:---Input: ‘N’ = 3
+Output: 
+* * *
+* *
+*
+public class Solution {
+    public static void seeding(int n) {
+        // Write your code here
+    for(int i=0;i<n;i++)
+    {
+      for(int j=n;j>i;j--)
+      {
+        System.out.print(" * ");
+      }
+      System.out.println();
+    }
+}
+}
+	
